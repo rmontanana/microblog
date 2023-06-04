@@ -1,0 +1,104 @@
+2023-06-03 21:28:36,207 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:28:38,642 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:28:40,330 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:28:41,629 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:29:35,163 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:30:43,525 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:32:38,700 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:33:27,453 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:34:29,733 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:34:49,116 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:35:13,268 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:36:44,548 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:37:05,324 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-03 21:37:15,359 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:01:14,308 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:01:31,728 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:02:26,464 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:02:39,866 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:03:05,683 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:03:35,114 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:15:47,183 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:15:53,685 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 01:19:54,421 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 11:09:37,753 INFO: Microblog startup [in /Users/rmontanana/Code/microblog/app/__init__.py:54]
+2023-06-04 11:16:03,037 ERROR: Exception on /explore [GET] [in /Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py:1741]
+Traceback (most recent call last):
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/Code/microblog/app/routes.py", line 193, in explore
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/rmontanana/Code/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/rmontanana/Code/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/base.html
+2023-06-04 11:22:13,327 ERROR: Exception on /explore [GET] [in /Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py:1741]
+Traceback (most recent call last):
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/Code/microblog/app/routes.py", line 193, in explore
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/rmontanana/Code/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rmontanana/miniconda3/envs/microblog/lib/python3.11/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/wtf.html

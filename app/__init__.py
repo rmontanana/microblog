@@ -6,6 +6,7 @@ from logging.handlers import RotatingFileHandler, SMTPHandler
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -18,6 +19,7 @@ migrate = Migrate(app, db)
 login = LoginManager(app)
 # sets de default login view
 login.login_view = "login"
+bootstrap = Bootstrap(app)
 
 if not app.debug:
     if app.config["MAIL_SERVER"]:
